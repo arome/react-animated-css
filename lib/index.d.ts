@@ -1,7 +1,7 @@
 // Type definitions for react-animated-css 1.0.2
 // Project: https://github.com/digital-flowers/react-animated-css
 // <reference types="react" />
-import {Component, Ref} from "react";
+import {Component, Ref, ReactNode} from "react";
 
 declare module "react-animated-css" {
   type AnimationString =
@@ -147,5 +147,10 @@ declare module "react-animated-css" {
      * @default true
      */
     animateOnMount?: boolean;
+    
+    /**
+     * React Children
+     */
+    children?: ReactNode;
   }
 }
